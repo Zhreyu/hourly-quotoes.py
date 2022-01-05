@@ -6,10 +6,10 @@ import requests
 # function to send notifications
 def notif(m):
     notification.notify(
-    title="Your daily quote has arrived",
+    title="Your daily quote has arrived", # you can customise this 
     message= m,
-    app_icon="",
-    timeout=10
+    app_icon="", # use ico file do not use png!
+    timeout=10 # notif will stay for 10 sec 
     )
     time.sleep(60*60) # you can use windows task schedular instead of making the program run 24/7 in backgroud 
     
